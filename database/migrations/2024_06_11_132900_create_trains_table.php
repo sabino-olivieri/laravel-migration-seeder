@@ -7,6 +7,20 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
+    * CREATE TABLE `trains` (
+    * `id` INT AUTO_INCREMENT PRIMARY KEY,
+    * `agency` VARCHAR(255) NOT NULL,
+    * `departure_station` VARCHAR(255) NOT NULL,
+    * `arrival_station` VARCHAR(255) NOT NULL,
+    * `departure_time` TIME NOT NULL,
+    * `arrival_time` TIME NOT NULL,
+    * `train_code` VARCHAR(15) NOT NULL,
+    * `number_carriages` TINYINT UNSIGNED NOT NULL,
+    * `is_on_time` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1,
+    * `deleted` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,
+    * `created_at` TIMESTAMP NULL,
+    * `updated_at` TIMESTAMP NULL
+    * );
      * Run the migrations.
      */
     public function up(): void
