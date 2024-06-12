@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @section('content')
     <div class="container mt-5 pt-3">
-        <h3>Lista dei treni in programma</h3>
+        <h3>Lista dei treni già passati</h3>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -34,7 +34,7 @@
                 @endforeach
                 <tr>
                     <td>
-                        Treni disponibili: {{ $cont }}
+                        Treni già partiti: {{ $cont }}
                     </td>
                 </tr>
             </tbody>

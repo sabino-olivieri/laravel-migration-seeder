@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AlredyLeftController;
 use App\Http\Controllers\TrainController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [TrainController::class, 'index'])->name('home');
+
+Route::get('/alredy-left', [AlredyLeftController::class, 'index'])->name('alredyLeft');
